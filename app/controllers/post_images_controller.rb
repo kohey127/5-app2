@@ -1,6 +1,6 @@
 class PostImagesController < ApplicationController
 
-  def new
+  def new #画像投稿の画面表示
   	@post_image = PostImage.new
   end
 
@@ -17,6 +17,7 @@ class PostImagesController < ApplicationController
 
   def show
     @post_image = PostImage.find(params[:id])
+    @post_comment = PostComment.new
   end
 
   private
