@@ -1,7 +1,7 @@
 class PostImagesController < ApplicationController
 
   def new #画像投稿の画面表示
-  	@post_image = PostImage.new
+    @post_image = PostImage.new
   end
 
   def create
